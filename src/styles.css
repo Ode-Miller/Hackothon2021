@@ -30,13 +30,27 @@ li a:hover {
 
 */
 
+button.SecondBar{ /* these are the styles for the buttons on th second bar at the top*/
+   background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color:white;
+    font-size: large;
+    
 
-body {
-    background-color: darkblue;
 }
 
-.SecondBar {
-   font-size: 30px;
+.SecondBar:hover{ /*This is so whenever you hover on the second bar options they change color*/
+  background-color: #111;
+}
+
+li.SecondBar{ /* This changes the font size of the text*/
+  font-size: large;
+
+
 }
 
 ul {
@@ -153,4 +167,11 @@ svg {
   width: 24px;
   height: 24px;
   padding: 10px;
+}
+
+
+
+li.rightplz{
+  float: right;
+  font-size: large;
 }

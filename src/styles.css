@@ -29,6 +29,19 @@ li a:hover {
 }
 
 */
+@media(max-width: 950px){
+  *{
+  
+  }
+  .SecondBar {
+    display: none;
+  }
+  li.rightplz{
+    display: none;
+  }
+
+  
+}
 
 button.SecondBar{ /* these are the styles for the buttons on th second bar at the top*/
    background-color: Transparent;
@@ -38,9 +51,7 @@ button.SecondBar{ /* these are the styles for the buttons on th second bar at th
     overflow: hidden;
     outline:none;
     color:white;
-    font-size: large;
-    
-
+    font-size: x-large;
 }
 
 .SecondBar:hover{ /*This is so whenever you hover on the second bar options they change color*/
@@ -48,16 +59,24 @@ button.SecondBar{ /* these are the styles for the buttons on th second bar at th
 }
 
 li.SecondBar{ /* This changes the font size of the text*/
+  font-size: x-large;
+}
+
+li.rightplz{
+  float: right;
   font-size: large;
+}
 
 
+a.rightplz{
+  font-size: x-large;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-color: #333;
 }
 
@@ -65,7 +84,7 @@ li {
   float: left;
 }
 
-li a, .dropbtn {
+li a, .dropbtn2 {
   display: inline-block;
   color: white;
   text-align: center;
@@ -74,15 +93,15 @@ li a, .dropbtn {
 
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown2:hover .dropbtn2 {
   background-color: #111;
 }
 
-li.dropdown {
+li.dropdown2 {
   display: inline-block;
 }
 
-.dropdown-content {
+.dropdown-content2 {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -91,7 +110,7 @@ li.dropdown {
   z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content2 a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -99,9 +118,9 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content2 a:hover {background-color: #f1f1f1;}
 
-.dropdown:hover .dropdown-content {
+.dropdown2:hover .dropdown-content2 {
   display: block;
 }
 .row .column{
@@ -170,8 +189,263 @@ svg {
 }
 
 
-
-li.rightplz{
-  float: right;
-  font-size: large;
+/*
+.ProvidersDropdown {
+  float: left;
+  overflow: hidden;
 }
+
+.ProvidersDropdown .ProvidersDropdownbtn {
+  cursor: pointer;
+  font-size: x-large;  
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.ProvidersDropdown:hover .ProvidersDropdownbtn, .ProvidersDropdownbtn:focus {
+  background-color: #111;
+}
+
+.ProvidersDropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.ProvidersDropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.ProvidersDropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+*/
+
+.Coviddropbtn {
+  /*background-color: #04AA6D;*/
+  color: white;
+  
+  font-size: x-large;
+  border: none;
+}
+
+.Coviddropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.Coviddropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Coviddropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.Coviddropdown-content a:hover {background-color: #ddd;}
+
+.Coviddropdown:hover .Coviddropdown-content {display: block;}
+
+.Coviddropdown:hover .Coviddropbtn {background-color: #3e8e41;}
+
+.Communitydropbtn {
+  /*background-color: #04AA6D;*/
+  color: white;
+  
+  font-size: x-large;
+  border: none;
+}
+
+.Communitydropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.Communitydropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Communitydropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.Communitydropdown-content a:hover {background-color: #ddd;}
+
+.Communitydropdown:hover .Communitydropdown-content {display: block;}
+
+.Communitydropdown:hover .Communitydropbtn {background-color: #3e8e41;}
+
+.Financialdropbtn {
+  /*background-color: #04AA6D;*/
+  color: white;
+  
+  font-size: x-large;
+  border: none;
+}
+
+.Financialdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.Financialdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Financialdropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.Financialdropdown-content a:hover {background-color: #ddd;}
+
+.Financialdropdown:hover .Financialdropdown-content {display: block;}
+
+.Financialdropdown:hover .Financialdropbtn {background-color: #3e8e41;}
+
+.Careersdropbtn {
+  /*background-color: #04AA6D;*/
+  color: white;
+  
+  font-size: x-large;
+  border: none;
+}
+
+.Careersdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.Careersdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Careersdropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.Careersdropdown-content a:hover {background-color: #ddd;}
+
+.Careersdropdown:hover .Careersdropdown-content {display: block;}
+
+.Careersdropdown:hover .Careersdropbtn {background-color: #3e8e41;}
+
+.Aboutdropbtn {
+  /*background-color: #04AA6D;*/
+  color: white;
+  
+  font-size: x-large;
+  border: none;
+}
+
+.Aboutdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.Aboutdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Aboutdropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.Aboutdropdown-content a:hover {background-color: #ddd;}
+
+.Aboutdropdown:hover .Aboutdropdown-content {display: block;}
+
+.Aboutdropdown:hover .Aboutdropbtn {background-color: #3e8e41;}
+
+.Providerdropbtn {
+  /*background-color: #04AA6D;*/
+  color: white;
+  
+  font-size: x-large;
+  border: none;
+}
+
+.Providerdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.Providerdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Providerdropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.Providerdropdown-content a:hover {background-color: #ddd;}
+
+.Providerdropdown:hover .Providerdropdown-content {display: block;}
+
+.Providerdropdown:hover .Providerdropbtn {background-color: #3e8e41;}
+
+
+
